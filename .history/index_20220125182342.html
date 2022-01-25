@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<title>Document</title>
+<head>
+    <meta data-n-head="true" charset="UTF-8">
+    <meta data-n-head="true" http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" />
+    <Style>
+
+    .mySlides {
+        display: none;
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .next {
+        left: 1655px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+        left: 0px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+    </Style>
+    <Style>
+        body {
+            background-image: url("img/bekgron.png");
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-color: white;
+            position: fixed;
+        }
+    </Style>
+</head>
+<body style="margin: 0 auto; position: absolute; width: 100%; min-height: 3700px; background-repeat: no-repeat;">
+    <div style="margin: 0 auto; position: absolute; overflow: hidden; right: 22.3%; top: 1.8%">
+    </div>
+
+    <!--Bagian Atas-->
+    <div>
+        <div>
+            <img src="img/kono.png" style="position: absolute; left: 10px; top: 20px;">
+        </div>
+        <div>
+            <img src="img/AboutUs.png" style="position: absolute; left: 1550px; top: 40px;">
+        </div>
+        <div>
+            <img src="img/Chara.png" style="position: absolute; left: 1300px; top: 40px;">
+        </div>
+        <div>
+            <img src="img/Gapai.png" style="position: absolute; left: 750px; top: 100px;">
+        </div>
+    </div>
+
+    <div>
+        <img src="img/charainfo.png" style="position: absolute; left: ; top: ;">
+    </div>
+
+    <!--character-->
+    <div>
+        <div class="mySlides" >
+            <img src="img/aqua1.png" style="position: absolute; left: 286px; top: 1261px;">
+            <div>
+                <img src="img/Aqua2.png" style="position: absolute; left: 350px; top: 1200px;">
+                <div>
+                    <h2 align="justify" style="position: absolute; left: 1100px; top: 1520px; width: 400px; color: rgb(0, 0, 0)">Ini Aqua</h2>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="img/Darkness1.png" style="position: absolute; left: 286px; top: 1261px;">
+            <div>
+                <img src="img/darkness2.png" style="position: absolute; left: 350px; top: 1200px;">
+                <div>
+                    <h2 align="justify" style="position: absolute; left: 1100px; top: 1520px; width: 400px; color: rgb(0, 0, 0)">Ini Darkness</h2>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="img/megumin1.png" style="position: absolute; left: 286px; top: 1261px;">
+            <div>
+                <img src="img/megumin2.png" style="position: absolute; left: 350px; top: 1200px;">
+                <div>
+                    <h2 align="justify" style="position: absolute; left: 1100px; top: 1520px; width: 400px; color: rgb(0, 0, 0)">Ini Megumin</h2>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="img/Kazuma1.png" style="position: absolute; left: 286px; top: 1261px;">
+            <div>
+                <img src="img/Kazuma2.png" style="position: absolute; left: 350px; top: 1200px;">
+                <div>
+                    <h2 align="justify" style="position: absolute; left: 1100px; top: 1520px; width: 400px; color: rgb(0, 0, 0);">Ini Kazuma</h2>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onlick="plusSlides(-1)" style="position: absolute; top:1450px;">
+            <img src="img/Kiri.png">
+        </a>
+        <a class="next" onlick="plusSlides(1)" style="position: absolute; top:1450px;">
+            <img src="img/Kanan.png">
+        </a>
+
+        <div class="row">
+            <div class="demo cursor">
+                <img src="img/aqua3.png" style="position: absolute; left: 1000px; top: 1865px; width: 150px;" onclick="currentSlide(1)">
+            </div>
+            <div class="demo cursor">
+                <img src="img/darkness3.png" style="position: absolute; left: 1180px; top: 1880px; width: 150px;" onclick="currentSlide(2)">
+            </div>
+            <div class="demo cursor">
+                <img src="img/megumin3.png" style="position: absolute; left: 1350px; top: 1825px; width: 150px;" onclick="currentSlide(3)">
+            </div>
+            <div class="demo cursor">
+                <img src="img/kazuma3.png" style="position: absolute; left: 1480px; top: 1700px; width: 150px;" onclick="currentSlide(4)">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/Bawah1.png" style="position: absolute; width: 100%; top: 3300px;">
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+</body>
+</html>
